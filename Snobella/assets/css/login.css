@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+  }
+  
+ .register_area {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+  
+ .register {
+    width: 400px;
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 5px;
+
+ 
+ }
+ .paraqraf{
+   text-align: center;
+   padding-top: 10px;
+ }
+.forgotpassword{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 10px;
+}
+ .title {
+    text-align: center;
+ }
+ 
+  
+ .submit{
+    width: 100%;
+    padding: 10px;
+    background-color:#F75145 ;
+    border: 1px solid #F75145 ; 
+ }
+ .submit:hover{
+  background-color:#F75145;
+  border: 1px solid #F75145 ; 
+ }

@@ -1,39 +1,46 @@
 /* navbar */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
-    max-width: 80%;
+
+.container {
+    /* max-width: 1200px; */
     height: 70px;
     margin: 0 auto;
 }
-.nav-area{
+
+.nav-area {
     display: flex;
     padding: 10px 0;
     justify-content: space-between;
     align-items: center;
 }
-.logo{
-    width:156px ;
+
+.logo {
+    width: 156px;
     font-weight: 700;
     font-family: "Palanquin";
     height: 40px;
     line-height: 100%;
     font-size: 40px;
 }
-.icon{
+
+.icon {
     display: flex;
     gap: 20px;
 }
-.icon i{
+
+.icon i {
     font-size: 20px;
 }
-.search{
+
+.search {
     position: relative;
 }
-.searchitem{
+
+.searchitem {
     width: 504px;
     height: 48px;
     border-radius: 8px;
@@ -50,29 +57,34 @@
     right: 10px;
     top: 15px;
 }
-.burger{
+
+.burger {
     font-size: 25px;
     display: none;
 }
-@media(max-width:1100px){
-    .search{
+
+@media(max-width:1100px) {
+    .search {
         display: none;
     }
-    .icon{
+
+    .icon {
         display: none;
     }
-    .burger{
+
+    .burger {
         display: block;
     }
 }
+
 /* main */
-.handproducts{
+.handproducts {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 70px;
 }
-.text{
+
+.text {
     width: 453px;
     height: 81px;
     font-size: 16px;
@@ -81,49 +93,134 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding-bottom: 170px;
 }
-.content{
+
+.content {
     display: flex;
     gap: 10px;
     flex-direction: column;
 }
-.content span{
+
+.content span {
     font-family: "Rubik";
-font-weight: bold;
-font-size: 24px;
-line-height: 170%;
-letter-spacing: 0%;
-color: #DF4244;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 170%;
+    letter-spacing: 0%;
+    color: #DF4244;
 
 }
-.content h2{
+
+.content h2 {
     font-family: "Rubik";
-font-weight: 700;
-font-size: 40px;
-line-height: 170%;
-letter-spacing: 0%;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 170%;
+    letter-spacing: 0%;
 
 }
-.content p{
+
+.content p {
+    width: 453px;
     font-family: "Poppins";
-font-weight: 400;
-font-size: 16px;
-line-height: 170%;
-letter-spacing: 0%;
-color: #212121BF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    letter-spacing: 0%;
+    color: #212121BF;
 
 }
-.btn button{
+
+.button button {
     width: 192px;
-height: 52px;
-top: 551px;
-left: 201px;
-border-radius: 8px;
-color: white;
-background-color: rgb(16, 107, 72);
+    height: 52px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(16, 107, 72);
 
 }
-#handproduct{
+
+#handproduct {
     background: #FFE2E0;
     height: 600px;
+}
+
+@media(max-width: 1100px) {
+    .handproducts {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .text {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .content span {
+        font-size: 20px;
+    }
+
+    .content h2 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .btn button {
+        width: 150px;
+        height: 44px;
+        font-size: 14px;
+    }
+
+    .image img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    #handproduct {
+        height: auto;
+        padding: 40px 0;
+    }
+}
+/* cards */
+#card-area{
+    height: 360px
+}
+.cards{
+    display: flex;
+    max-width: 90%;
+    padding-top: 50px;
+    gap: 50px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+#card-area .card{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    width: 360px;
+}
+#card-area img{
+    width: 212px;
+    height: 134px;
+}
+#card-area .star{
+    width: 100px;
+    height: 20px;
+}
+#card-area .price{
+    display: flex;
 }
