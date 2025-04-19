@@ -1,0 +1,82 @@
+/* navbar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-area {
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 156px;
+    font-weight: 700;
+    font-family: "Palanquin";
+    height: 40px;
+    line-height: 100%;
+    font-size: 40px;
+}
+
+.icon {
+    display: flex;
+    gap: 20px;
+}
+
+.icon i {
+    font-size: 20px;
+}
+
+.search {
+    position: relative;
+}
+
+.searchitem {
+    width: 504px;
+    height: 48px;
+    border-radius: 8px;
+    font-weight: 400;
+    line-height: 120%;
+    font-size: 16px;
+    font-family: "Poppins";
+    color: #AAAAAA;
+
+}
+
+.searchicon {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.burger {
+    font-size: 25px;
+    display: none;
+}
+
+@media(max-width:1100px) {
+    .search {
+        display: none;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}

@@ -1,19 +1,21 @@
 document.addEventListener("DOMContentLoaded",()=>{
     let users=JSON.parse(localStorage.getItem("users"))
     let form=document.querySelector("form")
-    let username=document.querySelector("#username")
+    let email=document.querySelector("#email")
     let password=document.querySelector("#password")
     form.addEventListener("submit",login)
 
     function login(e){
         e.preventDefault()
-        let isLoginuser=users.find((user)=>user.username==username.value && user.password ==password.value)
+        let isLoginuser = users.find(
+            (user) => user.email == email.value && user.password == password.value
+        );
 
         // task1
         // Username ve ya Email - Düzgün formatda olmalıdır. 
-        let usernameRegex = /^[a-zA-Z0-9_-]{3,20}$/;
-        if (!usernameRegex.test(username.value)) {
-            toast("minimum 3 maximum 20 characters only alphabet numbers underscores can be hyphens");
+        let emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/;
+        if (!emailRegex.test(email.value)) {
+            toast("Zəhmət olmasa düzgün e-poçt daxil edin.");
             return;
         }
 
