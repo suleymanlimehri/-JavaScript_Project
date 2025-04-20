@@ -4,6 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -67,38 +72,270 @@ html {
     display: none;
 }
 
-@media(max-width:1100px) {
+@media (max-width: 768px) {
+    .nav-area {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
     .search {
-        display: none;
+      width: 100%;
+      max-width: 400px;
+      position: relative;
+      display: flex;
+      justify-content: center;
     }
-
+  
+    .searchitem {
+      width: 100%;
+      padding: 10px 20px;
+      text-align: center;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+  
+    .searchicon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #333;
+    }
+  
     .icon {
-        display: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
     }
-
+  
     .burger {
-        display: block;
+      display: none;
     }
+  }
+ 
+.orange,
+.blue,
+.green,
+.pink {
+    border-radius: 50%;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
 }
-.image-slider img {
+
+.orange {
+    background-color: orange;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.pink {
+    background-color: pink;
+}
+
+
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.product-container {
+    display: flex;
+    gap: 30px;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.image {
+    position: relative;
     width: 300px;
-    height: 300px;
-    object-fit: cover;
-  }
-  .thumbnails img {
-    width: 60px;
-    height: 60px;
-    margin: 5px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.text {
+    flex: 1;
+}
+
+.top h5 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: gold;
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.left{
+    width: 300px;
+}
+.price-option {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 40px;
+}
+
+.price-option h6 {
+    margin: 5px 0;
+}
+
+.highlight {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.size,
+.color {
+    margin-bottom: 20px;
+}
+
+.size h5,
+.color h5 {
+    margin-bottom: 10px;
+}
+
+.size button,
+.color-option {
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: white;
     cursor: pointer;
-  }
-  .color {
+    border-radius: 5px;
+}
+
+.color-option {
     width: 20px;
     height: 20px;
-    display: inline-block;
     border-radius: 50%;
-    margin-right: 5px;
-  }
-  .orange { background-color: orange; }
-  .blue { background-color: blue; }
-  .pink { background-color: pink; }
-  
+    padding: 0;
+}
+.heart-icon{
+    position: absolute;
+    top: 0;
+    right: 40px;
+    color: red;
+}
+.color-option.orange {
+    background-color: orange;
+}
+
+.color-option.blue {
+    background-color: blue;
+}
+
+.color-option.green {
+    background-color: green;
+}
+
+.color-option.pink {
+    background-color: pink;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: red;
+    color: white;
+    width: 300px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.cash-payment {
+    width: 320px;
+    background-color: white;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.cash-payment:hover{
+    background-color: #000;
+    color: white;
+}
+.whatsapp-order {
+    display: inline-block;
+    margin-top: 10px;
+    color: #25D366;
+    text-decoration: none;
+}
+.product-card{
+    display: flex;
+}
+#descr_area{
+    padding-top: 40px;
+    font-size: 15px;
+}
+.title,.reviewss{
+    font-weight: 600;
+    font-size: 15px;
+}
+@media (max-width: 768px) {
+    #descr_area {
+        padding-top: 20px;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .descruption h5 {
+        font-size: 16px;
+        height: auto;
+        padding-bottom: 6px;
+    }
+
+    .reviewss {
+        display: block;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .titleDesc {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}

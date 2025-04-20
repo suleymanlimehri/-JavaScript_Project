@@ -4,7 +4,7 @@
       "id": 1,
       "image": "./assets/images/bag1.png",
       "star": "./assets/images/star.png",
-      "title": "Elegant Black Leather Shoulder Bag",
+      "title": "Elegant Black Leather Shoulder Bag A minimalist yet refined design Crafted from premium quality leather Perfect for both casual and formal outings",
       "price": 150.00,
       "description": "From $340.00"
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "image": "./assets/images/2.png",
       "star": "./assets/images/star.png",
-      "title": "Classic Brown Messenger Bag",
+      "title": "Vintage Tan Leather Tote with Braided Handles Spacious and stylish for everyday use Handmade detailing with a rustic charm Durable, soft leather that ages beautifully",
       "price": 120.00,
       "description": "From $300.00"
     },
@@ -20,7 +20,7 @@
       "id": 3,
       "image": "./assets/images/3.png",
       "star": "./assets/images/star.png",
-      "title": "Stylish Grey Tote with Leather Straps",
+      "title": "Modern Quilted Crossbody Bag in Midnight Blue Sleek and versatile for on-the-go lifestyles Adjustable strap with gold-toned hardware Compact yet roomy interior for essentials",
       "price": 180.00,
       "description": "From $360.00"
     },
@@ -28,7 +28,7 @@
       "id": 4,
       "image": "./assets/images/4.png",
       "star": "./assets/images/star.png",
-      "title": "Compact Blue Crossbody Bag",
+      "title": "Luxury Burgundy Satchel with Gold Accents Elegant structure and rich color tone Top handle and removable shoulder strap Perfect for adding a bold touch to outfits",
       "price": 95.00,
       "description": "From $250.00"
     },
@@ -36,7 +36,7 @@
       "id": 5,
       "image": "./assets/images/5.png",
       "star": "./assets/images/star.png",
-      "title": "Large Travel Duffel Bag - Canvas",
+      "title": "Soft Beige Slouchy Hobo Bag with Tassels Effortlessly chic with boho vibes Unstructured shape for laid-back comfort Zippered pockets and roomy main compartment",
       "price": 200.00,
       "description": "From $400.00"
     },
@@ -44,7 +44,7 @@
       "id": 6,
       "image": "./assets/images/6.png",
       "star": "./assets/images/star.png",
-      "title": "Minimalist Beige Leather Backpack",
+      "title": "Classic Black Mini Backpack with Silver Zips A stylish twist on a timeless design Ideal for travel or city life Water-resistant material and soft back padding",
       "price": 175.00,
       "description": "From $350.00"
     }
