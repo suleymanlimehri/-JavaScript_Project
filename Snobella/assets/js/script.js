@@ -234,17 +234,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     let countIcon = document.querySelector(".basket-count");
     countIcon.textContent = result;
   }
-document.getElementById("clearAllBtn").addEventListener("click", () => {
-  let users = JSON.parse(localStorage.getItem("users")) || [];
-  let currentUser = users.find((user) => user.isLogined === true);
-  
-  if (currentUser) {
-      currentUser.basket = []; 
-      let userIndex = users.findIndex((user) => user.id === currentUser.id);
-      users[userIndex].basket = []; 
-      localStorage.setItem("users", JSON.stringify(users)); 
-  }
-});
+
 
   basketCount();
   updateStatus();

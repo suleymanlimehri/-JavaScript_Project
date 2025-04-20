@@ -112,7 +112,14 @@ html {
       display: none;
     }
   }
-  
+.quantity-selector{
+  height: 40px;
+}
+.quantity-btn{
+  border: none;
+  background-color: transparent;
+  width: 40px;
+}
   .product-card {
     display: flex;
     gap: 20px;
