@@ -80,3 +80,25 @@ html {
         display: block;
     }
 }
+.image-slider img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .thumbnails img {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  .color {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  .orange { background-color: orange; }
+  .blue { background-color: blue; }
+  .pink { background-color: pink; }
+  
